@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-04T02:31:53 AST" name="Default suite" finished-at="2021-11-04T02:32:20 AST" duration-ms="26282">
+  <suite started-at="2021-11-04T02:35:48 AST" name="Default suite" finished-at="2021-11-04T02:36:12 AST" duration-ms="23989">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestNGRunner@5cee5251]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-11-04T02:31:53 AST" name="Default test" finished-at="2021-11-04T02:32:20 AST" duration-ms="26282">
+    <test started-at="2021-11-04T02:35:48 AST" name="Default test" finished-at="2021-11-04T02:36:12 AST" duration-ms="23989">
       <class name="runner.TestNGRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.TestNGRunner@5cee5251]" started-at="2021-11-04T02:31:54 AST" name="setUpClass" finished-at="2021-11-04T02:31:54 AST" duration-ms="83" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.TestNGRunner@5cee5251]" started-at="2021-11-04T02:35:48 AST" name="setUpClass" finished-at="2021-11-04T02:35:48 AST" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:runner.TestNGRunner@5cee5251]" started-at="2021-11-04T02:31:54 AST" name="beforeMethod" finished-at="2021-11-04T02:31:54 AST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:runner.TestNGRunner@5cee5251]" started-at="2021-11-04T02:35:48 AST" name="beforeMethod" finished-at="2021-11-04T02:35:48 AST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestNGRunner@5cee5251]" started-at="2021-11-04T02:31:54 AST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-04T02:32:06 AST" duration-ms="12140" status="FAIL">
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestNGRunner@5cee5251]" started-at="2021-11-04T02:35:48 AST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-04T02:35:59 AST" duration-ms="10892" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -50,7 +50,7 @@ at ✽.borrowing estimate should be $508,000(src/test/resources/testFeatures/Loa
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestNGRunner@5cee5251]" started-at="2021-11-04T02:32:06 AST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-04T02:32:12 AST" duration-ms="6573" status="PASS">
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestNGRunner@5cee5251]" started-at="2021-11-04T02:35:59 AST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-04T02:36:05 AST" duration-ms="6290" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,7 +66,7 @@ at ✽.borrowing estimate should be $508,000(src/test/resources/testFeatures/Loa
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestNGRunner@5cee5251]" started-at="2021-11-04T02:32:12 AST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-04T02:32:19 AST" duration-ms="6761" status="PASS">
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestNGRunner@5cee5251]" started-at="2021-11-04T02:36:05 AST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-04T02:36:11 AST" duration-ms="6108" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -79,14 +79,57 @@ at ✽.borrowing estimate should be $508,000(src/test/resources/testFeatures/Loa
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=95.0.4638.69)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Maens-MacBook-Pro.local', ip: '2001:16a2:cde9:7500:2c01:4c34:5456:80db%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26cb0a2877c640686e7c23411dee76b9, findElement {using=xpath, value=//*[@id='main-container']/div[1]/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div[2]/div/div[2]/div/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/nb/vwl8v_jn4p5...}, goog:chromeOptions: {debuggerAddress: localhost:56838}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:56838/devtoo..., se:cdpVersion: 95.0.4638.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 26cb0a2877c640686e7c23411dee76b9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=95.0.4638.69)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Maens-MacBook-Pro.local', ip: '2001:16a2:cde9:7500:2c01:4c34:5456:80db%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26cb0a2877c640686e7c23411dee76b9, findElement {using=xpath, value=//*[@id='main-container']/div[1]/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div[2]/div/div[2]/div/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/nb/vwl8v_jn4p5...}, goog:chromeOptions: {debuggerAddress: localhost:56838}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:56838/devtoo..., se:cdpVersion: 95.0.4638.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 26cb0a2877c640686e7c23411dee76b9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at stepDefinition.TestFeatures.FilOtherIncome(TestFeatures.java:95)
+at ✽.fill Other income field with 10000(src/test/resources/testFeatures/Loan Calculator.feature:36)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestNGRunner@5cee5251]" started-at="2021-11-04T02:32:19 AST" name="tearDownClass" finished-at="2021-11-04T02:32:20 AST" duration-ms="404" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestNGRunner@5cee5251]" started-at="2021-11-04T02:36:11 AST" name="tearDownClass" finished-at="2021-11-04T02:36:12 AST" duration-ms="329" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="get()[pri:0, instance:runner.TestNGRunner@5cee5251]" started-at="2021-11-04T02:32:20 AST" name="get" finished-at="2021-11-04T02:32:20 AST" duration-ms="270" status="PASS">
+        <test-method is-config="true" signature="get()[pri:0, instance:runner.TestNGRunner@5cee5251]" started-at="2021-11-04T02:36:12 AST" name="get" finished-at="2021-11-04T02:36:12 AST" duration-ms="237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get -->

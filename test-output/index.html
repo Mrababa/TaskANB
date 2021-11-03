@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,6 +102,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
                     <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify validation message&quot;, &quot;Verify that Field is required error is appear&quot;)">runScenario("Verify validation message", "Verify that Field is required error is appear")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="runner.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verfiy borrowing amount&quot;, &quot;Verify that Field is required error is appear&quot;)">runScenario("Verfiy borrowing amount", "Verify that Field is required error is appear")</a> <!-- method navigator-link -->
@@ -116,11 +121,6 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify validation message&quot;, &quot;Verify that Field is required error is appear&quot;)">runScenario("Verify validation message", "Verify that Field is required error is appear")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="runner.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check call Us message&quot;, &quot;Verify that Field is required error is appear&quot;)">runScenario("Check call Us message", "Verify that Field is required error is appear")</a> <!-- method navigator-link -->
@@ -144,6 +144,45 @@
               <span class="class-name">runner.TestNGRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify validation message&quot;, &quot;Verify that Field is required error is appear&quot;)">
+                  </a> <!-- runScenario("Verify validation message", "Verify that Field is required error is appear") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify validation message", "Verify that Field is required error is appear")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=95.0.4638.69)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;Maens-MacBook-Pro.local&apos;, ip: &apos;2001:16a2:cde9:7500:2c01:4c34:5456:80db%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26cb0a2877c640686e7c23411dee76b9, findElement {using=xpath, value=//*[@id=&apos;main-container&apos;]/div[1]/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div[2]/div/div[2]/div/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/nb/vwl8v_jn4p5...}, goog:chromeOptions: {debuggerAddress: localhost:56838}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:56838/devtoo..., se:cdpVersion: 95.0.4638.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 26cb0a2877c640686e7c23411dee76b9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at stepDefinition.TestFeatures.FilOtherIncome(TestFeatures.java:95)
+	at ✽.fill Other income field with 10000(src/test/resources/testFeatures/Loan Calculator.feature:36)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;Verfiy borrowing amount&quot;, &quot;Verify that Field is required error is appear&quot;)">
@@ -174,16 +213,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Verify validation message&quot;, &quot;Verify that Field is required error is appear&quot;)">
-                  </a> <!-- runScenario("Verify validation message", "Verify that Field is required error is appear") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify validation message", "Verify that Field is required error is appear")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="runScenario(&quot;Check call Us message&quot;, &quot;Verify that Field is required error is appear&quot;)">
                   </a> <!-- runScenario("Check call Us message", "Verify that Field is required error is appear") -->
                   <span class="method-name">runScenario</span>
@@ -197,7 +226,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/nb/vwl8v_jn4p57m86ywwv1t6640000gn/T/testng-eclipse-2099227047/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/nb/vwl8v_jn4p57m86ywwv1t6640000gn/T/testng-eclipse--672028980/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -258,20 +287,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.TestNGRunner')
-data.setCell(0, 3, 12140);
+data.setCell(0, 3, 10892);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runner.TestNGRunner')
-data.setCell(1, 3, 6761);
+data.setCell(1, 3, 6290);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'runner.TestNGRunner')
-data.setCell(2, 3, 6573);
+data.setCell(2, 3, 6108);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -304,29 +333,31 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">83 ms</span>
+                <span class="method-start">81 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Verfiy borrowing amount", "Verify that Field is required error is appear")</span>
-                <span class="method-start">112 ms</span>
+                <span class="method-start">107 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Check call Us message", "Verify that Field is required error is appear")</span>
-                <span class="method-start">12256 ms</span>
+                <span class="method-start">11004 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Verify validation message", "Verify that Field is required error is appear")</span>
-                <span class="method-start">18831 ms</span>
+                <span class="method-start">17295 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">25593 ms</span>
+                <span class="method-start">23408 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">get</span>
-                <span class="method-start">25998 ms</span>
+                <span class="method-start">23738 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
