@@ -1,25 +1,10 @@
-#Author: shivam9ronaldo7@gmail.com
+#Author: MainRababa@gmail.com
+#Keywords Assesemnet for ANB :
 @ftag1
-Feature: Title of your feature1
-  I want to use this template for my feature file
-
-  @tag1
-  Scenario: Title of your scenario1.1
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
-
-  @tag2
-  Scenario Outline: Title of your scenario outline1.2
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
-
-    Examples: 
-      | name  | value | status  |
-      | name1 |     3 | success |
-      | name2 |     1 | Fail    |
+Feature: This is the first sceneairos
+  
+   
+   Scenario: LEts pass the second one 
+   Given I am on How How much can I borrow page
+   When I search for test
+	Given I am on How How much can I borrow page

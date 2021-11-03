@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Main>
+
+
+	<Page Pgname="much-borrow">
+	
+		<Object objname="application_type_single"
+			locator="//*[@id='application_type_single']"/>
+			<Object objname="application_type_joint"
+			locator="//*[@id='application_type_joint']"/>
+			<Object objname="PageTitle"
+			locator="//*[@id='main_skip']/div[1]/div/div/div[2]/div[1]/div/div/h1/span"/>
+			<Object objname="Language_English3"
+			locator=".//app-language-switch-link//a"/>
+					
+	</Page>
+
+
+</Main>

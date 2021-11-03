@@ -11,47 +11,17 @@
 	<name>Cucumber-Extent-Report</name>
 	<description>Extent report with Cucumber</description>
 	<url>https://github.com/shivam9ronaldo7/cucumber-extent</url>
-	<licenses>
-		<license>
-			<name>MIT License</name>
-			<url>http://www.opensource.org/licenses/mit-license.php</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
 	<developers>
 		<developer>
-			<id>shivam9ronaldo7</id>
+			<id>Maen</id>
 			<roles>
-				<role>Owner</role>
+				<role>Creator</role>
 			</roles>
-			<name>Shivam Pratap Singh</name>
-			<email>shivam9ronaldo7@gmail.com</email>
+			<name>Maen Rababa</name>
+			<email>Mainrababa@gmail.com</email>
 			<organization>MyOwn</organization>
-			<organizationUrl>https://github.com/shivam9ronaldo7</organizationUrl>
 		</developer>
 	</developers>
-	<scm>
-		<connection>scm:git:git://github.com/shivam9ronaldo7/reports.git</connection>
-		<developerConnection>scm:git:ssh://github.com:shivam9ronaldo7/reports.git</developerConnection>
-		<url>https://github.com/shivam9ronaldo7</url>
-	</scm>
-
-	<distributionManagement>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
-		<repository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-		</repository>
-	</distributionManagement>
-
-	<issueManagement>
-		<url>https://github.com/shivam9ronaldo7/reports/issues</url>
-		<system>GitHub Issues</system>
-	</issueManagement>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -64,11 +34,7 @@
 			<version>4.2.0</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java8 -->
-		<dependency>
-			<groupId>io.cucumber</groupId>
-			<artifactId>cucumber-java8</artifactId>
-			<version>4.2.0</version>
-		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -119,6 +85,14 @@
 			<version>4.2.0</version>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.0.0</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jun 09 23:19:12 IST 2019</td>
+<td>Started on:</td><td>Wed Nov 03 12:04:58 AST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (922 ms)</td>
+<tr><td>Total time:</td><td>14 seconds (14376 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,28 +67,37 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Title of your scenario1.1", "Title of your feature1"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestNGRunner@343f4d3d</td></tr>
-<tr>
-<td title='runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Title of your scenario outline1.2", "Title of your feature1"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestNGRunner@343f4d3d</td></tr>
-<tr>
-<td title='runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Title of your scenario outline1.2", "Title of your feature1"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestNGRunner@343f4d3d</td></tr>
+<td title='runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "LEts pass the second one", "This is the first sceneairos"</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:819)
+	at org.testng.Assert.assertEquals(Assert.java:829)
+	at stepDefinition.TestFeatures.search_for(TestFeatures.java:59)
+	at ✽.I search for test(src/test/resources/testFeatures/Test Feature 1.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1960514242", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1960514242'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:819)
+	at org.testng.Assert.assertEquals(Assert.java:829)
+	at stepDefinition.TestFeatures.search_for(TestFeatures.java:59)
+	at ✽.I search for test(src/test/resources/testFeatures/Test Feature 1.feature:9)
+</pre></div></td>
+<td>13</td>
+<td>runner.TestNGRunner@5cee5251</td></tr>
 </table><p>
 </body>
 </html>

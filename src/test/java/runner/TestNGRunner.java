@@ -1,29 +1,32 @@
 package runner;
 
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
+
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import com.report.CucumberExtentOptions;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@CucumberOptions(
-		features = "src/test/resources",
-		glue={"stepDefinition"},
-		tags= {"@ftag1"},
-		monochrome=true,
-		plugin= {"com.report.CucumberExtent:target/cucumber-extent-reports/report.html"}
-		)
+@CucumberOptions(features = "src/test/resources/testFeatures", glue = { "stepDefinition" }, tags = {
+		"@ftag1" }, monochrome = true, plugin = {
+				"com.report.CucumberExtent:target/cucumber-extent-reports/report.html" })
 
-public class TestNGRunner extends AbstractTestNGCucumberTests{
-	/*@Override
-    @DataProvider(parallel = true)
-    public Object[][] scenarios() {
-        return super.scenarios();
-    }*/
+public class TestNGRunner extends AbstractTestNGCucumberTests {
+
 	@BeforeClass
 	public void beforeMethod() {
-		CucumberExtentOptions.getInstance().setDocumentTitle("Shivam document title");
-		//CucumberExtentOptions.getInstance().setReportLevel("Feature");
-		CucumberExtentOptions.getInstance().setReportName("Shivam report name");		
+		CucumberExtentOptions.getInstance().setDocumentTitle("Assessment Report");
+		CucumberExtentOptions.getInstance().setReportName("Created BY Mean");
+	}
+
+	@AfterTest
+	public void get() throws IOException {
+		
+		File htmlFile = new File("/Users/maenrababa/git/cucumber-extent/target/cucumber-extent-reports/report.html");
+		Desktop.getDesktop().browse(htmlFile.toURI());
 	}
 }
