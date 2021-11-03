@@ -12,7 +12,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(features = "src/test/resources/testFeatures", glue = { "stepDefinition" }, tags = {
-		"@ftag1" }, monochrome = true, plugin = {
+		"@SmokeTest" }, monochrome = true, plugin = {
 				"com.report.CucumberExtent:target/cucumber-extent-reports/report.html" })
 
 public class TestNGRunner extends AbstractTestNGCucumberTests {
@@ -25,8 +25,8 @@ public class TestNGRunner extends AbstractTestNGCucumberTests {
 
 	@AfterTest
 	public void get() throws IOException {
-		
-		File htmlFile = new File("/Users/maenrababa/git/cucumber-extent/target/cucumber-extent-reports/report.html");
+
+		File htmlFile = new File("/Users/maenrababa/git/AutomationAssessment/cucumber-extent-testng-Assessment/target/cucumber-extent-reports/report.html");
 		Desktop.getDesktop().browse(htmlFile.toURI());
 	}
 }

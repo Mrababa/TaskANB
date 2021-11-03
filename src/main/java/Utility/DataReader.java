@@ -32,7 +32,7 @@ public class DataReader {
 		DocumentBuilder builder = dBfactory.newDocumentBuilder();
 		// Fetch XML File
 		Document document = builder
-				.parse(new File("/Users/maenrababa/git/cucumber-extent/src/test/resources/Objects.xml"));
+				.parse(new File("/Users/maenrababa/git/AutomationAssessment/cucumber-extent-testng-Assessment/src/test/resources/Objects.xml"));
 		
 		
 		document.getDocumentElement().normalize();

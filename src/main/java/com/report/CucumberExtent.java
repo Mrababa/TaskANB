@@ -3,6 +3,7 @@ package com.report;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
+import Utility.DriverManager;
 import java.util.HashMap;
 import java.util.Map;
 import javax.imageio.ImageIO;
@@ -309,9 +310,12 @@ public class CucumberExtent implements EventListener{
 		this.extentBDDStep = test;
 		switch(result.getStatus().toString()) {
 		case "PASSED": test.pass("Pass");
+		//test.addScreenCaptureFromPath(Utility.DriverManager.takeScreenshotAtEndOfTest());
 		break;
 		case "FAILED": test.fail("Fail");
 		test.fail(result.getErrorMessage());
+		// TO add screenshot here
+		//test.addScreenCaptureFromPath(Utility.DriverManager.takeScreenshotAtEndOfTest());
 		break;
 		case "SKIPPED": test.skip("Skip");
 		break;

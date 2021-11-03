@@ -3,16 +3,72 @@
 
 
 	<Page Pgname="much-borrow">
-	
-		<Object objname="application_type_single"
-			locator="//*[@id='application_type_single']"/>
-			<Object objname="application_type_joint"
-			locator="//*[@id='application_type_joint']"/>
-			<Object objname="PageTitle"
-			locator="//*[@id='main_skip']/div[1]/div/div/div[2]/div[1]/div/div/h1/span"/>
-			<Object objname="Language_English3"
-			locator=".//app-language-switch-link//a"/>
-					
+
+		<Object objname="Raido_application_type_single"
+			locator="//*[@id='application_type_single']" />
+
+		<Object objname="Radio_application_type_joint"
+			locator="//*[@id='application_type_joint']" />
+
+		<Object objname="Label_PageTitle"
+			locator="//*[@id='main_skip']/div[1]/div/div/div[2]/div[1]/div/div/h1/span" />
+
+		<Object objname="Radio_HomeToLiveIn"
+			locator="//*[@id='borrow_type_home']" />
+
+		<Object objname="Radio_borrow_type_investment"
+			locator="//*[@id='borrow_type_investment']" />
+
+		<Object objname="List_NumberOfDependants"
+			locator="//*[@id='main-container']/div[1]/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div[1]/div/div[2]/div/select" />
+
+		<Object objname="Txt_YourIncomeBeforeTax"
+			locator="//*[@id='main-container']/div[1]/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div[2]/div/div[1]/div/input" />
+
+		<Object objname="Txt_YourOtherIncome"
+			locator="//*[@id='main-container']/div[1]/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div[2]/div/div[2]/div/input" />
+
+
+		<Object objname="Txt_2ApplicantsIncome"
+			locator="//*[@id='main-container']/div[1]/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div[2]/div/div[3]/div/input" />
+
+		<Object objname="Txt_2ApplicantsOtherIncome"
+			locator="//*[@id='main-container']/div[1]/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div[2]/div/div[4]/div/input" />
+
+		<Object objname="Btn_WorkOutHowMuch"
+			locator="//*[@id='btnBorrowCalculater']" />
+
+		<Object objname="Error_Required" locator="//*[@id='required']" />
+
+
+		<Object objname="Txt_CurrentHomeLoanRepayments"
+			locator="//*[@id='homeloans']" />
+
+		<Object objname="Txt_LivingExpenses"
+			locator="//*[@id='expenses']" />
+
+		<Object objname="Txt_OtherLoans"
+			locator="//*[@id='otherloans']" />
+
+		<Object objname="Txt_OtherCommitments"
+			locator="//*[@id='main-container']/div[1]/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div[3]/div/div[4]/div/input" />
+
+		<Object objname="Txt_TotalCreditCardLimits"
+			locator="//*[@id='credit']" />
+
+		<Object objname="Btn_StartOver"
+			locator="//*[@id='main-container']/div[1]/div/div/div[2]/div/div/div/div/div[1]/div/div[3]/div/div/div/div[3]/div[2]/button" />
+
+		<Object objname="Label_borrowResultTextAmount"
+			locator="//*[@id='borrowResultTextAmount']" />
+
+<Object objname="Label_CallUsMessage"
+			locator="//*[@id='main-container']/div[1]/div/div/div[2]/div/div/div/div/div[1]/div/div[3]/div/div/div/div[3]/div[1]/span" />
+
+
+
+
+
 	</Page>
 
 

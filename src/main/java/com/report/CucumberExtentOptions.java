@@ -1,5 +1,6 @@
 package com.report;
 
+
 public class CucumberExtentOptions {
 	
 	private static ThreadLocal<CucumberExtentOptions> cucumberExtentOptions = new ThreadLocal<CucumberExtentOptions>();

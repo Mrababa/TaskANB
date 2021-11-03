@@ -3,14 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.github.shivam9ronaldo7</groupId>
+	<groupId>com.Main</groupId>
 	<artifactId>cucumber-extent</artifactId>
 	<version>0.0.4</version>
 	<packaging>jar</packaging>
 
-	<name>Cucumber-Extent-Report</name>
-	<description>Extent report with Cucumber</description>
-	<url>https://github.com/shivam9ronaldo7/cucumber-extent</url>
+	
 	<developers>
 		<developer>
 			<id>Maen</id>
