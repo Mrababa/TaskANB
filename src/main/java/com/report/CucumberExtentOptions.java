@@ -8,6 +8,7 @@ public class CucumberExtentOptions {
 	private String reportName = null;
 	private String reportLevel = null;
 	
+	
 	private CucumberExtentOptions() {}
 	
 	public static CucumberExtentOptions getInstance() {
