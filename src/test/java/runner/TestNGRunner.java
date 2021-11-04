@@ -26,7 +26,7 @@ public class TestNGRunner extends AbstractTestNGCucumberTests {
 	@AfterTest
 	public void get() throws IOException {
 
-		File htmlFile = new File("/Users/maenrababa/git/AutomationAssessment/cucumber-extent-testng-Assessment/target/cucumber-extent-reports/report.html");
+		File htmlFile = new File(System.getProperty("user.dir") + "/target/cucumber-extent-reports/report.html");
 		Desktop.getDesktop().browse(htmlFile.toURI());
 	}
 }
