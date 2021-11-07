@@ -132,7 +132,20 @@ public class TestFeatures {
 	@Then("^borrowing estimate should be (.*)$")
 	public void VerifyEstimationAMount(String Amount)
 			throws IOException, ParserConfigurationException, SAXException, InterruptedException {
-		Thread.sleep(2000);
+		
+		
+		String x = DriverManager.driver
+				.findElement(By.xpath(datareader.getElement("Label_borrowResultTextAmount", "much-borrow"))).getText();
+		
+		while (!DriverManager.driver
+		.findElement(By.xpath(datareader.getElement("Label_borrowResultTextAmount", "much-borrow"))).getText().equals(x))
+		{
+			x = DriverManager.driver
+					.findElement(By.xpath(datareader.getElement("Label_borrowResultTextAmount", "much-borrow"))).getText();
+			
+		}
+		
+		
 		Assert.assertEquals(DriverManager.driver
 				.findElement(By.xpath(datareader.getElement("Label_borrowResultTextAmount", "much-borrow"))).getText(),
 				Amount, "Amount miss match");
